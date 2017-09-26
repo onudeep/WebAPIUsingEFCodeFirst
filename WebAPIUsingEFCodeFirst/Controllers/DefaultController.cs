@@ -43,6 +43,7 @@ namespace WebAPIUsingEFCodeFirst.Controllers
             {
                 //If any exception occurs Internal Server Error i.e. Status Code 500 will be returned  
                 return InternalServerError();
+                Console.WriteLine("Error");
             }
         }
     }

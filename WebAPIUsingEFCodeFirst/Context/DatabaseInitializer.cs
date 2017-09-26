@@ -44,7 +44,7 @@ namespace WebAPIUsingEFCodeFirst.Context
                     Name="Uttaranchal",City=cityInUttaranchal
                 },
                 new  State {
-                    Name="Panjab",City=cityInPanjab
+                    Name="Punjab",City=cityInPanjab
                 }
             };
             Country country = new Country

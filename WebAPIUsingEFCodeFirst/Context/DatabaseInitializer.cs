@@ -4,7 +4,7 @@ using WebAPIUsingEFCodeFirst.Models;
 
 namespace WebAPIUsingEFCodeFirst.Context
 {
-    public class DatabaseInitializer : DropCreateDatabaseIfModelChanges<DatabaseContext>
+    public class DatabaseInitializer : DropCreateDatabaseAlways<DatabaseContext>
     {
         protected override void Seed(DatabaseContext context)
         {
@@ -12,23 +12,23 @@ namespace WebAPIUsingEFCodeFirst.Context
 
             var cityInMaharashtra = new List<City> {
                 new City {Name="Mumbai" },
-                                new City {Name= "Pune" }
+                new City {Name= "Pune" }
             };
             var cityInUttarPradesh = new List<City> {
                 new City {Name="Lucknow" },
-                                new City {Name="Banaras" }
+                new City {Name="Banaras" }
             };
             var cityInTamilnadu = new List<City> {
                 new City {Name="Bangaluru" },
-                                new City {Name="Chennai" }
+                new City {Name="Chennai" }
             };
             var cityInUttaranchal = new List<City> {
                 new City {Name="Dehradun" },
-                                new City {Name="Rishikesh" }
+                new City {Name="Rishikesh" }
             };
-            var cityInPanjab = new List<City> {
+            var cityInPunjab = new List<City> {
                 new City {Name="Chandigarh" },
-                                new City {Name="Ludhiana" }
+                new City {Name="Ludhiana" }
             };
             var stateInIndia = new List<State> {
                 new State {
@@ -44,7 +44,7 @@ namespace WebAPIUsingEFCodeFirst.Context
                     Name="Uttaranchal",City=cityInUttaranchal
                 },
                 new  State {
-                    Name="Punjab",City=cityInPanjab
+                    Name="Punjab",City=cityInPunjab
                 }
             };
             Country country = new Country
